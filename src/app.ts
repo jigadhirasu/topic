@@ -1,6 +1,6 @@
 const fs = require('fs');
 const express = require("express");
-const showdown   = require('showdown');
+const showdown = require('showdown');
 
 // Default port
 const port = 3000;
@@ -13,6 +13,11 @@ app.get("/", (req, res) => {
     const html = converter.makeHtml(text);
     res.send(html);
 });
+
+app.get('/battle', (req, res) => {
+    // TODO 依README.md需求實作於此處
+    res.send('');
+})
 
 app.listen(port, () => {
     console.log(`server started at http://localhost:${port}`);

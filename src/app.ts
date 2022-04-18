@@ -7,6 +7,7 @@ const port = 3000;
 
 const app = express();
 const converter = new showdown.Converter();
+converter.setOption('tables', true);
 
 app.get("/", (req, res) => {
     const text = fs.readFileSync('./README.md').toString();

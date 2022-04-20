@@ -1,8 +1,8 @@
-# topic-backend
-後端程式考題。使用zip來交付程式，只需要package-lock.json，不需要連同node_modules一同壓縮。
+# topic
+使用zip來交付程式，只需要package-lock.json，不需要連同node_modules一同壓縮。
 ## 需求
 ### 實作API /battle
-依使用端提供的資訊，計算並回傳勝負結果。
+依使用端提供的資訊，計算並回傳勝負結果，所有battle方式都要實作。
 #### Input
 
 | key     | type       | description                              |
